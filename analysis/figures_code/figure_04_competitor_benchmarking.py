@@ -1,7 +1,8 @@
 """
 figure_04 — Part A: competitor benchmarking — ARPU, subscribers and monetisation gap vs scale.
 
-Reads ``analysis/competitor_stats_2025.xlsx``. Saves ``figure_04_competitor_benchmarking.png``.
+Reads ``competitor_stats_2025.xlsx`` from ``analysis/`` or ``data/``.
+Saves ``figure_04_competitor_benchmarking.png``.
 """
 
 import sys, os
@@ -18,10 +19,19 @@ import pandas as pd
 plt.rcParams.update(SPOTIFY_STYLE)
 
 # Load benchmark inputs from the user-maintained Excel workbook
-XLSX = os.path.join(_FCDIR, '..', 'competitor_stats_2025.xlsx')
-if not os.path.isfile(XLSX):
-    print(f'SKIP figure_04: missing workbook:\n  {XLSX}')
-    print('  Restore competitor_stats_2025.xlsx under analysis/ (sheet ARPU_Calculations), then re-run.')
+_REPO = os.path.normpath(os.path.join(_FCDIR, '..', '..'))
+for _xlsx in (
+    os.path.join(_FCDIR, '..', 'competitor_stats_2025.xlsx'),
+    os.path.join(_REPO, 'data', 'competitor_stats_2025.xlsx'),
+):
+    if os.path.isfile(_xlsx):
+        XLSX = _xlsx
+        break
+else:
+    print('SKIP figure_04: missing workbook (expected one of):')
+    print(f'  {os.path.join(_FCDIR, "..", "competitor_stats_2025.xlsx")}')
+    print(f'  {os.path.join(_REPO, "data", "competitor_stats_2025.xlsx")}')
+    print('  Sheet required: ARPU_Calculations.')
     sys.exit(0)
 
 fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(16, 5.6))

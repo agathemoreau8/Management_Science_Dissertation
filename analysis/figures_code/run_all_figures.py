@@ -46,7 +46,7 @@ for s in scripts:
         note = ''
         out = (result.stdout or '')
         if 'SKIP figure_04' in out:
-            note = '  (skipped — add analysis/competitor_stats_2025.xlsx)'
+            note = '  (skipped — add competitor_stats_2025.xlsx under analysis/ or data/)'
         print(f'  OK  {s}{note}')
         ok.append(s)
     else:
