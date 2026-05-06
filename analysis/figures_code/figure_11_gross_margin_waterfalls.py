@@ -1,5 +1,5 @@
 """
-figure_12 — Part B: paired GM waterfalls — robust partial S1 + S2 base vs primary S1 full + S2 conservative.
+figure_11 — Part B: paired GM waterfalls — robust partial S1 + S2 base vs primary S1 full + S2 conservative.
 
 Steps from ``part_b_constants``. Saves ``figure_12_gross_margin_waterfalls.png``.
 """
@@ -153,6 +153,6 @@ draw_waterfall(
 )
 
 plt.subplots_adjust(left=0.055, right=0.995, top=0.86, bottom=0.44, wspace=0.26)
-plt.savefig(f'{FIGS}/figure_12_gross_margin_waterfalls.png', dpi=150, bbox_inches='tight', pad_inches=0.6)
+plt.savefig(f'{FIGS}/figure_11_gross_margin_waterfalls.png', dpi=150, bbox_inches='tight', pad_inches=0.6)
 plt.close()
-print('Saved: figure_12_gross_margin_waterfalls.png')
+print('Saved: figure_11_gross_margin_waterfalls.png')

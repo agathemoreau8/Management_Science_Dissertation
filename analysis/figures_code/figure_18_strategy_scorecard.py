@@ -1,5 +1,5 @@
 """
-figure_14 — Part B: multi-criteria strategy scorecard heatmap (NPV-scaled row + author judgments).
+figure_18 — Part B: multi-criteria strategy scorecard heatmap (NPV-scaled row + author judgments).
 
 Uses ``part_b_constants`` NPVs for row scaling. Saves ``figure_14_strategy_scorecard.png``.
 """
@@ -108,6 +108,6 @@ fig.text(
     style='italic',
 )
 plt.tight_layout(rect=(0, 0.04, 1, 1))
-plt.savefig(f'{FIGS}/figure_14_strategy_scorecard.png', dpi=150, bbox_inches='tight', pad_inches=0.38)
+plt.savefig(f'{FIGS}/figure_18_strategy_scorecard.png', dpi=150, bbox_inches='tight', pad_inches=0.38)
 plt.close()
-print('Saved: figure_14_strategy_scorecard.png')
+print('Saved: figure_18_strategy_scorecard.png')

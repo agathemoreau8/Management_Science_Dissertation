@@ -1,5 +1,5 @@
 """
-figure_10 — Part B: illustrative Gantt-style roadmap (S3 → S2 → S1 sequencing).
+figure_19 — Part B: illustrative Gantt-style roadmap (S3 → S2 → S1 sequencing).
 
 Saves ``figure_10_implementation_roadmap.png``.
 """
@@ -46,6 +46,6 @@ handles = [
 ax.legend(handles=handles, loc='upper center', bbox_to_anchor=(0.5, -0.14), ncol=2, fontsize=8)
 
 plt.tight_layout(rect=[0, 0.08, 1, 1])
-plt.savefig(f'{FIGS}/figure_10_implementation_roadmap.png', dpi=150, bbox_inches='tight', pad_inches=0.35)
+plt.savefig(f'{FIGS}/figure_19_implementation_roadmap.png', dpi=150, bbox_inches='tight', pad_inches=0.35)
 plt.close()
-print('Saved: figure_10_implementation_roadmap.png')
+print('Saved: figure_19_implementation_roadmap.png')

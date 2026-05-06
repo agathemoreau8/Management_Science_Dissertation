@@ -1,5 +1,5 @@
 """
-figure_13 — Part B: Premium ARPU path — actuals, OLS trend, organic extrapolation and Strategy 3 glidepath to FY2028 blended target.
+figure_14 — Part B: Premium ARPU path — actuals, OLS trend, organic extrapolation and Strategy 3 glidepath to FY2028 blended target.
 
 Uses ``part_b_constants`` anchors. Saves ``figure_13_premium_arpu_path.png``.
 """
@@ -76,6 +76,6 @@ ax1.axvspan(quarters[4], quarters[7], alpha=0.06, color=BLUE)
 ax1.axvspan(quarters[8], quarters[11], alpha=0.06, color=GREEN)
 
 plt.tight_layout(pad=1.6, rect=[0, 0.08, 1, 1])
-plt.savefig(f'{FIGS}/figure_13_premium_arpu_path.png', dpi=150, bbox_inches='tight', pad_inches=0.35)
+plt.savefig(f'{FIGS}/figure_14_premium_arpu_path.png', dpi=150, bbox_inches='tight', pad_inches=0.35)
 plt.close()
-print('Saved: figure_13_premium_arpu_path.png')
+print('Saved: figure_14_premium_arpu_path.png')

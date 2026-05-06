@@ -1,8 +1,8 @@
 """
-figure_04 — Part A: competitor benchmarking — ARPU, subscribers and monetisation gap vs scale.
+figure_05 — Part A: competitor benchmarking — ARPU, subscribers and monetisation gap vs scale.
 
 Reads ``competitor_stats_2025.xlsx`` from ``analysis/`` or ``data/``.
-Saves ``figure_04_competitor_benchmarking.png``.
+Saves ``figure_05_competitor_benchmarking.png``.
 """
 
 import sys, os
@@ -28,7 +28,7 @@ for _xlsx in (
         XLSX = _xlsx
         break
 else:
-    print('SKIP figure_04: missing workbook (expected one of):')
+    print('SKIP figure_05: missing workbook (expected one of):')
     print(f'  {os.path.join(_FCDIR, "..", "competitor_stats_2025.xlsx")}')
     print(f'  {os.path.join(_REPO, "data", "competitor_stats_2025.xlsx")}')
     print('  Sheet required: ARPU_Calculations.')
@@ -116,6 +116,6 @@ ax3.grid(True, alpha=0.4, axis='y')
 fig.suptitle('Competitor Benchmarking: ARPU, Subscriber Scale & Revenue Efficiency',
              fontweight='bold', y=1.02)
 plt.tight_layout(pad=1.8)
-plt.savefig(f'{FIGS}/figure_04_competitor_benchmarking.png', dpi=150, bbox_inches='tight', pad_inches=0.35)
+plt.savefig(f'{FIGS}/figure_05_competitor_benchmarking.png', dpi=150, bbox_inches='tight', pad_inches=0.35)
 plt.close()
-print('Saved: figure_04_competitor_benchmarking.png')
+print('Saved: figure_05_competitor_benchmarking.png')

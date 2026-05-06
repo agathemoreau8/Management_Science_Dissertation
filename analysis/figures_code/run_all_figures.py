@@ -19,19 +19,19 @@ scripts = [
     'figure_01_mau_subscribers.py',
     'figure_02_monetisation_paradox.py',
     'figure_03_porters_five_forces.py',
-    'figure_04_competitor_benchmarking.py',
-    'figure_05_customer_clv_segments.py',
-    'figure_06_streaming_subscriber_share.py',
+    'figure_04_streaming_subscriber_share.py',
+    'figure_05_competitor_benchmarking.py',
+    'figure_06_customer_clv_segments.py',
     'figure_07_gross_margin_trend.py',
-    'figure_08_price_elasticity_yoy.py',
-    'figure_09_strategy_sensitivity_heatmaps.py',
-    'figure_10_implementation_roadmap.py',
-    'figure_11_gross_margin_path.py',
-    'figure_12_gross_margin_waterfalls.py',
-    'figure_13_premium_arpu_path.py',
-    'figure_14_strategy_scorecard.py',
+    'figure_10_gross_margin_path.py',
+    'figure_11_gross_margin_waterfalls.py',
+    'figure_12_price_elasticity_yoy.py',
+    'figure_multi_strategy_sensitivity_heatmaps.py',
+    'figure_14_premium_arpu_path.py',
     'figure_15_gm_scenarios_horizontal_bars.py',
     'figure_16_s3_adoption_net_arpu.py',
+    'figure_18_strategy_scorecard.py',
+    'figure_19_implementation_roadmap.py',
 ]
 
 ok, fail = [], []
@@ -45,7 +45,7 @@ for s in scripts:
     if result.returncode == 0:
         note = ''
         out = (result.stdout or '')
-        if 'SKIP figure_04' in out:
+        if 'SKIP figure_05' in out:
             note = '  (skipped — add competitor_stats_2025.xlsx under analysis/ or data/)'
         print(f'  OK  {s}{note}')
         ok.append(s)

@@ -1,5 +1,5 @@
 """
-figure_05 — Part A: segment mix donut, illustrative CLV by tier and FY2024-style revenue bars.
+figure_06 — Part A: segment mix donut, illustrative CLV by tier and FY2024-style revenue bars.
 
 Uses fixed segment inputs documented in-code (plan mix / GM / churn). Saves ``figure_05_customer_clv_segments.png``.
 """
@@ -98,6 +98,6 @@ ax3.grid(True, alpha=0.35, axis='y')
 fig.suptitle('Freemium Segments: Scale, CLV (Illustrative) & FY2024 Revenue',
              fontweight='bold', y=1.01)
 plt.tight_layout(pad=1.75)
-plt.savefig(f'{FIGS}/figure_05_customer_clv_segments.png', dpi=150, bbox_inches='tight', pad_inches=0.35)
+plt.savefig(f'{FIGS}/figure_06_customer_clv_segments.png', dpi=150, bbox_inches='tight', pad_inches=0.35)
 plt.close()
-print('Saved: figure_05_customer_clv_segments.png')
+print('Saved: figure_06_customer_clv_segments.png')

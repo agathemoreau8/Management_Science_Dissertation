@@ -1,5 +1,5 @@
 """
-figure_08 — Part B: YoY price elasticity — OLS of YoY Premium subs % on YoY Premium ARPU % (4-quarter changes).
+figure_12 — Part B: YoY price elasticity — OLS of YoY Premium subs % on YoY Premium ARPU % (4-quarter changes).
 
 Matches ``regression/r03`` specification on ``_shared.df18``. Saves ``figure_08_price_elasticity_yoy.png``.
 """
@@ -86,6 +86,6 @@ ax_right.text(
     bbox=dict(boxstyle='round', facecolor='#F0F8F4', edgecolor='#CCCCCC', alpha=0.95),
 )
 
-plt.savefig(f'{FIGS}/figure_08_price_elasticity_yoy.png', dpi=150, bbox_inches='tight', pad_inches=0.4)
+plt.savefig(f'{FIGS}/figure_12_price_elasticity_yoy.png', dpi=150, bbox_inches='tight', pad_inches=0.4)
 plt.close()
-print('Saved: figure_08_price_elasticity_yoy.png')
+print('Saved: figure_12_price_elasticity_yoy.png')

@@ -1,5 +1,5 @@
 """
-figure_06 — Global streaming subscriber share pie (author-provided shares); saves ``figure_06_streaming_subscriber_share.png``.
+figure_04 — Global streaming subscriber share pie (author-provided shares); saves ``figure_06_streaming_subscriber_share.png``.
 """
 
 import sys, os
@@ -97,7 +97,7 @@ ax.set_title(
 ax.axis("equal")
 
 plt.tight_layout()
-plt.savefig(f"{FIGS}/figure_06_streaming_subscriber_share.png", dpi=160, bbox_inches="tight", pad_inches=0.35)
+plt.savefig(f"{FIGS}/figure_04_streaming_subscriber_share.png", dpi=160, bbox_inches="tight", pad_inches=0.35)
 plt.close()
 
-print("Saved: figure_06_streaming_subscriber_share.png")
+print("Saved: figure_04_streaming_subscriber_share.png")

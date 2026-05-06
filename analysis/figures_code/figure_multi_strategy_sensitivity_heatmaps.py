@@ -1,5 +1,5 @@
 """
-figure_09 — Part B: three-panel sensitivity heatmaps for Strategies 1–3 (CVP coverage × royalty relief; CM mix grid; Supremium adoption × downgrade).
+figure_multi — Part B: three-panel sensitivity heatmaps for Strategies 1–3 (CVP coverage × royalty relief; CM mix grid; Supremium adoption × downgrade).
 
 Uses ``part_b_constants`` for FY2025 scales and S3 parameters. Saves ``figure_09_strategy_sensitivity_heatmaps.png``.
 """
@@ -145,6 +145,6 @@ for i in range(_n3y):
 plt.colorbar(im3, ax=ax3, label='Net ARPU uplift (€/mo)', shrink=0.85)
 
 plt.tight_layout(pad=1.8)
-plt.savefig(f'{FIGS}/figure_09_strategy_sensitivity_heatmaps.png', dpi=150, bbox_inches='tight', pad_inches=0.35)
+plt.savefig(f'{FIGS}/figure_multi_strategy_sensitivity_heatmaps.png', dpi=150, bbox_inches='tight', pad_inches=0.35)
 plt.close()
-print('Saved: figure_09_strategy_sensitivity_heatmaps.png')
+print('Saved: figure_multi_strategy_sensitivity_heatmaps.png')
